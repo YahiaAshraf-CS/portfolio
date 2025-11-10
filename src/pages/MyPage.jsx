@@ -216,14 +216,14 @@ function MyPage() {
                                   href="/portfolio/Yehia-Ashraf-cv.pdf"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className=" px-3 py-2 text-xl text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
                                   {" "}
                                   View My CV
                               </a>
                               <a
                                   href="/portfolio/Yehia-Ashraf-cv.pdf"
                                   download="Yehia-Ashraf-cv.pdf"
-                                  className=" px-3 py-2 text-xl text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
                                   {" "}
                                   Download CV
                               </a>
