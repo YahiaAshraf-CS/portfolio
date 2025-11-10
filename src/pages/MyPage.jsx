@@ -188,8 +188,8 @@ function MyPage() {
           <section id="home" className="  lg:h-screen md:h-fit h-fit xl:h-screen bg-[var(--darkblue)] flex justify-center items-center ">
               <main className="  flex-col-reverse pt-29 sm:pt-29 md:pt-25 lg:pt-15 xl:pt-15  ] w-full h-full flex sm:flex-col-reverse md:flex-col-reverse justify-evenly items-center   lg:flex-row xl:flex-row gap-5 ">
                   <div id="text" className="flex flex-col   w-[90%] md:w-[90%]  xl:w-[55%] lg:w-[55%] h-[400px] text-start justify-start items-start p-2   lg:ml-0  ">
-                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-[var(--light)]">
-                          My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf Aly</span>
+                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-6xl xl:text-7xl font-bold text-[var(--light)]">
+                          My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf</span>
                       </h1>
                       <p className=" pl-5 pt-7 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[var(--light)]">
                           Iam a{" "}
@@ -205,7 +205,7 @@ function MyPage() {
                                   ]}
                                   wrapper="span"
                                   speed={50}
-                                  className=" text-[var(--sky)] font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl"
+                                  className=" text-[var(--sky)] font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
                                   repeat={Infinity}
                               />
                           </span>
