@@ -269,34 +269,34 @@ function MyPage() {
           </section>
 
           {/*section2 about section*/}
-          <section id="about" className=" h-screen bg-blue-400">
+          <section id="about" className=" h-screen bg-[var(--darkblue)]">
               <h1>about</h1>
           </section>
 
           {/*section3 skills section*/}
-          <section id="skills" className=" h-screen bg-green-400">
+          <section id="skills" className=" h-screen bg-[var(--darkblue)]">
               <h1>skills</h1>
           </section>
 
           {/*section4 future skills section*/}
-          <section id="future-skills" className=" h-screen bg-yellow-400">
+          <section id="future-skills" className=" h-screen bg-[var(--darkblue)]">
               <h1>future skills</h1>
           </section>
 
           {/*section5 projects section*/}
-          <section id="projects" className=" h-screen bg-pink-400">
+          <section id="projects" className=" h-screen bg-[var(--darkblue)]">
               {" "}
               <h1>projects</h1>{" "}
           </section>
 
           {/*section6 contact section*/}
-          <section id="contact" className=" h-screen bg-cyan-400">
+          <section id="contact" className=" h-screen bg-[var(--darkblue)]">
               {" "}
               <h1>contact</h1>
           </section>
 
           {/*footer section*/}
-          <footer className=" h-screen bg-indigo-400">
+          <footer className=" h-screen bg-[var(--darkblue)]">
               {" "}
               <h1>footer</h1>
           </footer>
