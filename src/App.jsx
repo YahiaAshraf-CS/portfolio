@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MyPage from './pages/MyPage.jsx'
 import './App.css'
 
@@ -7,11 +8,14 @@ import './App.css'
 function App() {
  
   return (
-    <>
-      <h1 className=' bg-[var(--green)]'> yehia</h1>
-      <h1 className=' bg-[var(--white)]'>yehia</h1>
-      <h1 className=' bg-[var(--red)]'>yehia</h1>
-          <MyPage />
+      <>
+          <Router>
+              {/* 2. التغيير هنا: Switch بقت Routes */}
+              <Routes>
+                  {/* 3. التغيير هنا: component بقت element ولازم الأقواس */}
+                  <Route path="/portfolio/" element={<MyPage />} />
+              </Routes>
+          </Router>
       </>
   );
 }
