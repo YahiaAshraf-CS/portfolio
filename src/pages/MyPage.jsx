@@ -188,11 +188,11 @@ function MyPage() {
           {/*section1 home section*/}
           <section id="home" className="  lg:h-screen md:h-fit h-fit xl:h-screen bg-[var(--darkblue)] flex justify-center items-center ">
               <main className="  flex-col-reverse pt-29 sm:pt-29 md:pt-25 lg:pt-15 xl:pt-15  ] w-full h-full flex sm:flex-col-reverse md:flex-col-reverse justify-evenly items-center   lg:flex-row xl:flex-row gap-5 ">
-                  <div id="text" className="flex flex-col   w-[90%] md:w-[90%]  xl:w-[55%] lg:w-[55%] h-[400px] text-start justify-start items-start p-2   lg:ml-0  ">
-                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-6xl xl:text-7xl font-bold text-[var(--light)]">
+                  <div id="text" className="flex flex-col   w-[100%] md:w-[100%]  xl:w-[55%] lg:w-[55%] h-[400px] jusstify-start items-center  lg:justify-start lg:items-start p-2   lg:ml-0  ">
+                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-bold text-[var(--light)]">
                           My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf</span>
                       </h1>
-                      <p className=" pl-5 pt-7 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[var(--light)]">
+                      <p className="  pt-7 text-2xl md:text-3xl lg:text-3xl xl:text-6xl font-bold text-[var(--light)]">
                           Iam a{" "}
                           <span className=" font-bold text-[var(--sky)]">
                               <TypeAnimation
@@ -206,12 +206,12 @@ function MyPage() {
                                   ]}
                                   wrapper="span"
                                   speed={50}
-                                  className=" text-[var(--sky)] font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl"
+                                  className=" text-[var(--sky)] font-bold text-2xl md:text-4xl lg:text-3xl xl:text-6xl"
                                   repeat={Infinity}
                               />
                           </span>
                       </p>
-                      <div className=" pl-5 mt-7 flex-col gap-4 flex justify-center items-start w-full h-fit">
+                      <div className=" mt-7 flex-col gap-4 flex justify-start items-center lg:justify-center lg:items-start w-full h-fit">
                           <div className=" flex flex-row gap-10 ">
                               <a
                                   href="https://drive.google.com/file/d/1K3026MKq1MHPw0srypnYOacN0SdUw_dW/view?usp=drive_link"
@@ -229,7 +229,7 @@ function MyPage() {
                                   Download CV
                               </a>
                           </div>
-                          <div className=" pl-2 mt-4 flex flex-row gap-10 text-[var(--sky)] ">
+                          <div className="  mt-4 flex flex-row gap-10 text-[var(--sky)] ">
                               <a href="https://www.linkedin.com/in/yehia-aly-6a606234a/" target="_blank">
                                   {" "}
                                   <FaLinkedinIn
@@ -261,9 +261,9 @@ function MyPage() {
                           </div>
                       </div>
                   </div>
-                  <div className=" w-[400px] h-[400px]">
+                  <div className=" w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
                       {" "}
-                      <img id="yehia" src={yehia} className=" w-[100%] rounded-full  h-[400px]" alt="" />
+                      <img id="yehia" src={yehia} className=" w-[100%] rounded-full  h-[100%]" alt="" />
                   </div>
               </main>
           </section>
