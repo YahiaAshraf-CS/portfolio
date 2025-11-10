@@ -9,6 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import pdf from '../assets/files/Yehia-Ashraf-cv.pdf';
 
 import '../style/MyPage.css'
 import { Link } from "react-scroll";// استيراد Link من react-scroll لعمل التمرير الناعم
@@ -213,7 +214,7 @@ function MyPage() {
                       <div className=" pl-5 mt-7 flex-col gap-4 flex justify-center items-start w-full h-fit">
                           <div className=" flex flex-row gap-10 ">
                               <a
-                                  href="/portfolio/Yehia-Ashraf-cv.pdf"
+                                  href="https://drive.google.com/file/d/1K3026MKq1MHPw0srypnYOacN0SdUw_dW/view?usp=drive_link"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
@@ -221,7 +222,7 @@ function MyPage() {
                                   View My CV
                               </a>
                               <a
-                                  href="/portfolio/Yehia-Ashraf-cv.pdf"
+                                  href={ pdf}
                                   download="Yehia-Ashraf-cv.pdf"
                                   className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
                                   {" "}
@@ -231,19 +232,31 @@ function MyPage() {
                           <div className=" pl-2 mt-4 flex flex-row gap-10 text-[var(--sky)] ">
                               <a href="https://www.linkedin.com/in/yehia-aly-6a606234a/" target="_blank">
                                   {" "}
-                                  <FaLinkedinIn className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />{" "}
+                                  <FaLinkedinIn
+                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={40}
+                                  />{" "}
                               </a>
                               <a href="https://www.facebook.com/yahia.ashraf.779205/" target="_blank">
                                   {" "}
-                                  <FaFacebookF className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                                  <FaFacebookF
+                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={40}
+                                  />
                               </a>
                               <a href="https://www.instagram.com/yahia3975/" target="_blank">
                                   {" "}
-                                  <FaInstagram className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                                  <FaInstagram
+                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={40}
+                                  />
                               </a>
                               <a href="https://github.com/YahiaAshraf-CS" target="_blank">
                                   {" "}
-                                  <FaGithub className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                                  <FaGithub
+                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={40}
+                                  />
                               </a>
                           </div>
                       </div>
