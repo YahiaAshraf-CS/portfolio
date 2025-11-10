@@ -1,8 +1,19 @@
+@import '../index.css';
 nav ul li {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
 
+}
+header{
+    animation: fadein 1s ease-in-out;
+
+}
+#text{
+    animation: fadeleft 1s ease-in-out;
+}
+#yehia{
+    animation: faderight 1s ease-in-out;
 }
 
 nav ul li::after {

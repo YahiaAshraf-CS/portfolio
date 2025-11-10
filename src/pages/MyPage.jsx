@@ -3,6 +3,13 @@ import { NavLink } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useState } from 'react';
+import yehia from '../assets/images/yehia3.jpg';
+import { TypeAnimation } from 'react-type-animation';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 import '../style/MyPage.css'
 import { Link } from "react-scroll";// استيراد Link من react-scroll لعمل التمرير الناعم
 //! react scroll is a library that allows you to create smooth scrolling navigation links in your React applications between different sections of your page.
@@ -178,8 +185,74 @@ function MyPage() {
           </header>
 
           {/*section1 home section*/}
-          <section id="home" className=" h-screen bg-[var(--darkblue)] ">
-              <h1>yehia</h1>
+          <section id="home" className="  lg:h-screen md:h-fit h-fit xl:h-screen bg-[var(--darkblue)] flex justify-center items-center ">
+              <main className="  flex-col-reverse pt-29 sm:pt-29 md:pt-25 lg:pt-15 xl:pt-15  ] w-full h-full flex sm:flex-col-reverse md:flex-col-reverse justify-evenly items-center   lg:flex-row xl:flex-row gap-5 ">
+                  <div id="text" className="flex flex-col   w-[90%] md:w-[90%]  xl:w-[55%] lg:w-[55%] h-[400px] text-start justify-start items-start p-2   lg:ml-0  ">
+                      <h1 id="name" className=" text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[var(--light)]">
+                          My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf Aly</span>
+                      </h1>
+                      <p className=" pl-5 pt-7 text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[var(--light)]">
+                          Iam a{" "}
+                          <span className=" font-bold text-[var(--sky)]">
+                              <TypeAnimation
+                                  sequence={[
+                                      " Frontend Developer",
+                                      2000, //2000 ms pause
+                                      " UI/UX designer",
+                                      2000,
+                                      " Software Engineering",
+                                      2000,
+                                  ]}
+                                  wrapper="span"
+                                  speed={50}
+                                  className=" text-[var(--sky)] font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl"
+                                  repeat={Infinity}
+                              />
+                          </span>
+                      </p>
+                      <div className=" pl-5 mt-7 flex-col gap-4 flex justify-center items-start w-full h-fit">
+                          <div className=" flex flex-row gap-10 ">
+                              <a
+                                  href="/portfolio/Yehia-Ashraf-cv.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className=" px-3 py-2 text-xl text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  {" "}
+                                  View My CV
+                              </a>
+                              <a
+                                  href="/portfolio/Yehia-Ashraf-cv.pdf"
+                                  download="Yehia-Ashraf-cv.pdf"
+                                  className=" px-3 py-2 text-xl text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  {" "}
+                                  Download CV
+                              </a>
+                          </div>
+                          <div className=" pl-2 mt-4 flex flex-row gap-10 text-[var(--sky)] ">
+                              <a href="https://www.linkedin.com/in/yehia-aly-6a606234a/" target="_blank">
+                                  {" "}
+                                  <FaLinkedinIn className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />{" "}
+                              </a>
+                              <a href="https://www.facebook.com/yahia.ashraf.779205/" target="_blank">
+                                  {" "}
+                                  <FaFacebookF className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                              </a>
+                              <a href="https://www.instagram.com/yahia3975/" target="_blank">
+                                  {" "}
+                                  <FaInstagram className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                              </a>
+                              <a href="https://github.com/YahiaAshraf-CS" target="_blank">
+                                  {" "}
+                                  <FaGithub className=' border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl' size={40} />
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div className=" w-[400px] h-[400px]">
+                      {" "}
+                      <img id="yehia" src={yehia} className=" w-[100%] rounded-full  h-[400px]" alt="" />
+                  </div>
+              </main>
           </section>
 
           {/*section2 about section*/}
@@ -208,6 +281,12 @@ function MyPage() {
               {" "}
               <h1>contact</h1>
           </section>
+
+          {/*footer section*/}
+          <footer className=" h-screen bg-indigo-400">
+              {" "}
+              <h1>footer</h1>
+          </footer>
       </>
   );
 }
