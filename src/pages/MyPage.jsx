@@ -188,11 +188,11 @@ function MyPage() {
           {/*section1 home section*/}
           <section id="home" className="  lg:h-screen md:h-fit h-fit xl:h-screen bg-[var(--darkblue)] flex justify-center items-center ">
               <main className="  flex-col-reverse pt-29 sm:pt-29 md:pt-25 lg:pt-15 xl:pt-15  ] w-full h-full flex sm:flex-col-reverse md:flex-col-reverse justify-evenly items-center   lg:flex-row xl:flex-row gap-5 ">
-                  <div id="text" className="flex flex-col   w-[100%] md:w-[100%]  xl:w-[55%] lg:w-[55%] h-[400px] jusstify-start items-center  lg:justify-start lg:items-start p-2   lg:ml-0  ">
-                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-bold text-[var(--light)]">
-                          My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf</span>
+                  <div id="text" className="flex flex-col gap-5  w-[100%] md:w-[100%]  xl:w-[55%] lg:w-[55%] h-[400px] jusstify-start items-center  lg:justify-start lg:items-start p-2   lg:ml-0  ">
+                      <h1 id="name" className=" text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-[var(--light)]">
+                          My Name Is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf Aly</span>
                       </h1>
-                      <p className="  pt-7 text-2xl md:text-3xl lg:text-3xl xl:text-6xl font-bold text-[var(--light)]">
+                      <p className="  pt-7 text-2xl md:text-3xl lg:text-3xl xl:text-5xl font-bold text-[var(--light)]">
                           Iam a{" "}
                           <span className=" font-bold text-[var(--sky)]">
                               <TypeAnimation
@@ -206,30 +206,30 @@ function MyPage() {
                                   ]}
                                   wrapper="span"
                                   speed={50}
-                                  className=" text-[var(--sky)] font-bold text-2xl md:text-4xl lg:text-3xl xl:text-6xl"
+                                  className=" text-[var(--sky)] font-bold text-2xl md:text-4xl lg:text-3xl xl:text-5xl"
                                   repeat={Infinity}
                               />
                           </span>
                       </p>
-                      <div className=" mt-7 flex-col gap-4 flex justify-start items-center lg:justify-center lg:items-start w-full h-fit">
+                      <div className=" mt-7 flex-col gap-10 flex justify-start items-center lg:justify-center lg:items-start w-full h-fit">
                           <div className=" flex flex-row gap-10 ">
                               <a
                                   href="https://drive.google.com/file/d/1K3026MKq1MHPw0srypnYOacN0SdUw_dW/view?usp=drive_link"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  className=" px-3 py-2 shadow-sm shadow-sky-300 drop-shadow-sm drop-shadow-sky-300  hover:shadow-xl hover:shadow-sky-300 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
                                   {" "}
                                   View My CV
                               </a>
                               <a
-                                  href={ pdf}
+                                  href={pdf}
                                   download="Yehia-Ashraf-cv.pdf"
-                                  className=" px-3 py-2 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
+                                  className=" px-3 py-2 shadow-sm shadow-sky-300  drop-shadow-sm drop-shadow-sky-300 hover:shadow-xl hover:shadow-sky-300 text-xl w-fit text-[var(--sky)] border-2 border-[var(--sky)] rounded-3xl cursor-pointer hover:translate-y-1 hover:bg-[var(--sky)] hover:text-[var(--light)] transition-all duration-300">
                                   {" "}
                                   Download CV
                               </a>
                           </div>
-                          <div className="  mt-4 flex flex-row gap-10 text-[var(--sky)] ">
+                          <div className="  mt-6 flex flex-row gap-12 text-[var(--sky)] ">
                               <a href="https://www.linkedin.com/in/yehia-aly-6a606234a/" target="_blank">
                                   {" "}
                                   <FaLinkedinIn
