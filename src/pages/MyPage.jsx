@@ -270,7 +270,7 @@ function MyPage() {
                   </div>
               </main>
           </section>
-          
+
 
           {/*section2 about section*/}
           <section id="about" className=" h-fit w-full border-2 border-[var(--sky)] bg-[var(--darkblue)]">
@@ -285,6 +285,8 @@ function MyPage() {
                           am aspiring to become a <span className=" font-bold text-[var(--sky)]">full stack developer</span>.
                       </p>
                   </div>
+
+                  
                   <div id="Img_swiper" className="w-[100%] h-[50%] lg:w-[100%] lg:h-[100%] xl:w-[100%] xl:h-[100%]">
                       {" "}
                       <h1>yehia</h1>
