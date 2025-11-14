@@ -1,18 +1,22 @@
 @import '../index.css';
+
 nav ul li {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
 
 }
-header{
+
+header {
     animation: fadein 1s ease-in-out;
 
 }
-#text{
+
+#text {
     animation: fadeleft 1s ease-in-out;
 }
-#yehia{
+
+#yehia {
     animation: faderight 1s ease-in-out;
 }
 
@@ -27,19 +31,37 @@ nav ul li::after {
     bottom: 0;
     transition: all 0.3s ease-in-out;
 }
+nav ul li:not(.active){
+    font-weight: normal;
+    color: var(--light);
+    position: relative;
+    overflow: hidden;
+}
+nav ul li :not(.active)::after {
+    left: -100%;
+    transition: all 0.3s ease-in-out;}
 
-#mobile-menu .active{
-     border:2px solid var(--sky);
-        padding:4px;
-        border-radius:10px;
-        background-color: var(--sky);
-        color: var(--light);
-} 
+#mobile-menu .active {
+    border: 2px solid var(--sky);
+    padding: 4px;
+    border-radius: 10px;
+    background-color: var(--sky);
+    color: var(--light);
+}
+
+
+
 nav ul li:hover::after {
     left: 0;
     transition: all 0.3s ease-in-out;
 
 
+}
+#moblie-menu:not(.active) {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
 }
 
 
@@ -52,6 +74,10 @@ nav ul li:hover::after {
 }
 
 
+
+
+
 .active::after {
     left: 0;
 }
+

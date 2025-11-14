@@ -11,6 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import pdf from '../assets/files/Yehia-Ashraf-cv.pdf';
 
+
 import '../style/MyPage.css'
 import { Link } from "react-scroll";// استيراد Link من react-scroll لعمل التمرير الناعم
 //! react scroll is a library that allows you to create smooth scrolling navigation links in your React applications between different sections of your page.
@@ -18,12 +19,13 @@ function MyPage() {
     // class name for active link styling
    
     const activeClassName = "active";
+   
      const [isOpen, setIsOpen] = useState(false);// for mobile menu toggle
     
 
   return (
       <>
-          <header className=" fixed shadow-md  shadow-sky-300  shadow-[var(--sky)] flex justify-between w-full h-fit  items-center py-4 px-2 bg-transparent  ">
+          <header className=" fixed shadow-md  shadow-sky-300  shadow-[var(--sky)] flex justify-between w-full h-fit  items-center py-2.5 px-2 bg-[var(--darkblue)]  ">
               {/*navigation bar*/}
               <nav className=" flex justify-between w-full h-fit  items-center px-2 py-2 ">
                   <h1 className=" drop-shadow-2xl drop-shadow-[var(--sky)]  hover:scale-110 hover:-translate-y-1 cursor-pointer transform-3d transition-all duration-400  hover:text-[var(--light)] text-4xl text-[var(--sky)] font-extrabold ">
@@ -63,17 +65,7 @@ function MyPage() {
                                   activeClass={activeClassName}>
                                   About
                               </Link>
-                              <Link
-                                  to="projects"
-                                  spy={true}
-                                  smooth={true}
-                                  duration={500}
-                                  className={
-                                      "nav-link hover:scale-110 hover:text-[var(--light)] hover:bg-[var(--sky)]  hover:border-2 hover:border-[var(--sky)] rounded-xl px-2 py-2 hover:-translate-y-1 cursor-pointer text-[var(--sky)] transition-all duration-300"
-                                  }
-                                  activeClass={activeClassName}>
-                                  Projects
-                              </Link>
+
                               <Link
                                   to="skills"
                                   spy={true}
@@ -97,6 +89,17 @@ function MyPage() {
                                   Future Skills
                               </Link>
                               <Link
+                                  to="projects"
+                                  spy={true}
+                                  smooth={true}
+                                  duration={500}
+                                  className={
+                                      "nav-link hover:scale-110 hover:text-[var(--light)] hover:bg-[var(--sky)]  hover:border-2 hover:border-[var(--sky)] rounded-xl px-2 py-2 hover:-translate-y-1 cursor-pointer text-[var(--sky)] transition-all duration-300"
+                                  }
+                                  activeClass={activeClassName}>
+                                  Projects
+                              </Link>
+                              <Link
                                   to="contact"
                                   spy={true}
                                   smooth={true}
@@ -117,7 +120,7 @@ function MyPage() {
                               to="home" // ده الـ ID بتاع السيكشن
                               spy={true} // عشان يتابع إنت فين
                               smooth={true} // عشان الـ scroll الناعم
-                              duration={500} // سرعة الـ scroll بالمللي ثانية
+                              duration={300} // سرعة الـ scroll بالمللي ثانية
                               // دالة بتتنفذ لما اللينك يبقى في الحالة النشطة
                               className={"nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"}
                               activeClass={activeClassName} // كلاس هيتضاف للينك لما توصل للسيكشن
@@ -130,7 +133,7 @@ function MyPage() {
                               to="about"
                               spy={true}
                               smooth={true}
-                              duration={500}
+                              duration={300}
                               className="nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"
                               activeClass={activeClassName}>
                               About
@@ -141,7 +144,7 @@ function MyPage() {
                               to="skills"
                               spy={true}
                               smooth={true}
-                              duration={500}
+                              duration={300}
                               className="nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"
                               activeClass={activeClassName}>
                               Skills
@@ -152,7 +155,7 @@ function MyPage() {
                               to="future-skills"
                               spy={true}
                               smooth={true}
-                              duration={500}
+                              duration={300}
                               className={"nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"}
                               activeClass={activeClassName}>
                               Future Skills
@@ -163,7 +166,7 @@ function MyPage() {
                               to="projects"
                               spy={true}
                               smooth={true}
-                              duration={500}
+                              duration={300}
                               className="nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"
                               activeClass={activeClassName}>
                               Projects
@@ -174,7 +177,7 @@ function MyPage() {
                               to="contact"
                               spy={true}
                               smooth={true}
-                              duration={500}
+                              duration={300}
                               className="nav-link hover:scale-110 hover:-translate-y-1 cursor-pointer hover:text-[var(--sky)] transition-all duration-300"
                               activeClass={activeClassName}>
                               Contact
@@ -233,29 +236,29 @@ function MyPage() {
                               <a href="https://www.linkedin.com/in/yehia-aly-6a606234a/" target="_blank">
                                   {" "}
                                   <FaLinkedinIn
-                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
-                                      size={40}
+                                      className=" border-2 border-[var(--sky)] rounded-full shadow-sm shadow-sky-300  drop-shadow-sm drop-shadow-sky-300 hover:shadow-xl hover:shadow-sky-300 w-fit h-fit hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={20}
                                   />{" "}
                               </a>
                               <a href="https://www.facebook.com/yahia.ashraf.779205/" target="_blank">
                                   {" "}
                                   <FaFacebookF
-                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
-                                      size={40}
+                                      className=" border-2 border-[var(--sky)] rounded-full w-fit h-fit hover:text-[var(--light)] shadow-sm shadow-sky-300  drop-shadow-sm drop-shadow-sky-300 hover:shadow-xl hover:shadow-sky-300 hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={20}
                                   />
                               </a>
                               <a href="https://www.instagram.com/yahia3975/" target="_blank">
                                   {" "}
                                   <FaInstagram
-                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
-                                      size={40}
+                                      className=" border-2 border-[var(--sky)] w-fit h-fit rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] shadow-sm shadow-sky-300  drop-shadow-sm drop-shadow-sky-300 hover:shadow-xl hover:shadow-sky-300 hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
+                                      size={20}
                                   />
                               </a>
                               <a href="https://github.com/YahiaAshraf-CS" target="_blank">
                                   {" "}
                                   <FaGithub
-                                      className=" border-2 border-[var(--sky)] rounded-full hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 transition-all duration-300 p-2 text-2xl"
-                                      size={40}
+                                      className=" border-2 border-[var(--sky)] rounded-full w-fit h-fit hover:text-[var(--light)] hover:bg-[var(--sky)] hover:translate-y-0.5 shadow-sm shadow-sky-300    drop-shadow-sm drop-shadow-sky-300 hover:shadow-xl hover:shadow-sky-300 transition-all duration-300 p-2 text-2xl"
+                                      size={20}
                                   />
                               </a>
                           </div>
@@ -269,8 +272,23 @@ function MyPage() {
           </section>
 
           {/*section2 about section*/}
-          <section id="about" className=" h-screen bg-[var(--darkblue)]">
-              <h1>about</h1>
+          <section id="about" className=" h-screen border-2 border-[var(--sky)] bg-[var(--darkblue)]">
+              <h2 className=" text-[var(--sky)] text-center font-bold mt-15 text-4xl md:text-5xl lg:text-6xl xl:text-7xl">About Me</h2>
+              <div className=" w-full h-full border-2 border-[var(--sky)] flex flex-col gap-x-25 px-8 py-2  justify-center items-center lg:flex-row lg:justify-around lg:items-center xl:justify-between">
+                  <div id="About_text w-[100%] h-[50%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] text-xl" className="">
+                      <p className="text-[var(--light)]  space-x-0.5 line-clamp-3 text-xl">
+                          {" "}
+                          My name is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf Aly</span>. Iam a computer science student at{" "}
+                          <span className=" font-bold text-[var(--sky)]">Nile University</span>. Iam a <span className=" font-bold text-[var(--sky)]">Front-end Developer</span> &{" "}
+                          <span className=" font-bold text-[var(--sky)]">UI/UX Designer</span>, I am passionate about web development and I am always looking for new challenges to improve my skills. I
+                          am aspiring to become a <span className=" font-bold text-[var(--sky)]">full stack developer</span>.
+                      </p>
+                  </div>
+                  <div id="Img_swiper" className="w-[100%] h-[50%] lg:w-[70%] lg:h-[100%] xl:w-[70%] xl:h-[100%]">
+                      {" "}
+                      <h1>yehia</h1>
+                  </div>
+              </div>
           </section>
 
           {/*section3 skills section*/}
