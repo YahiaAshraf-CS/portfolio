@@ -270,6 +270,7 @@ function MyPage() {
                   </div>
               </main>
           </section>
+          
 
           {/*section2 about section*/}
           <section id="about" className=" h-fit w-full border-2 border-[var(--sky)] bg-[var(--darkblue)]">
