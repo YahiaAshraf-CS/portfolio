@@ -272,11 +272,11 @@ function MyPage() {
           </section>
 
           {/*section2 about section*/}
-          <section id="about" className=" h-screen border-2 border-[var(--sky)] bg-[var(--darkblue)]">
+          <section id="about" className=" h-fit w-full border-2 border-[var(--sky)] bg-[var(--darkblue)]">
               <h2 className=" text-[var(--sky)] text-center font-bold mt-15 text-4xl md:text-5xl lg:text-6xl xl:text-7xl">About Me</h2>
-              <div className=" w-full h-full border-2 border-[var(--sky)] flex flex-col gap-x-25 px-8 py-2  justify-center items-center lg:flex-row lg:justify-around lg:items-center xl:justify-between">
-                  <div id="About_text w-[100%] h-[50%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] text-xl" className="">
-                      <p className="text-[var(--light)]  space-x-0.5 line-clamp-3 text-xl">
+              <div className=" w-full h-full border-2 border-[var(--sky)] flex flex-col gap-x-25 px-8 py-2 mt-10  justify-start items-center  lg:justify-around lg:items-center xl:justify-start">
+                  <div id="About_text " className="w-[100%] h-fit mt-16 lg:w-[100%] lg:h-fit xl:w-[100%] xl:h-fit text-xl">
+                      <p className="text-[var(--light)]  space-x-0.5  text-xl">
                           {" "}
                           My name is <span className=" font-bold text-[var(--sky)]">Yehia Ashraf Aly</span>. Iam a computer science student at{" "}
                           <span className=" font-bold text-[var(--sky)]">Nile University</span>. Iam a <span className=" font-bold text-[var(--sky)]">Front-end Developer</span> &{" "}
@@ -284,7 +284,7 @@ function MyPage() {
                           am aspiring to become a <span className=" font-bold text-[var(--sky)]">full stack developer</span>.
                       </p>
                   </div>
-                  <div id="Img_swiper" className="w-[100%] h-[50%] lg:w-[70%] lg:h-[100%] xl:w-[70%] xl:h-[100%]">
+                  <div id="Img_swiper" className="w-[100%] h-[50%] lg:w-[100%] lg:h-[100%] xl:w-[100%] xl:h-[100%]">
                       {" "}
                       <h1>yehia</h1>
                   </div>
